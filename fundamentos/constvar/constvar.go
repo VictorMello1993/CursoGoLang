@@ -11,7 +11,7 @@ func main() {
 	//Sintaxe para a criação de variáveis em Go:
 	//palavra reservada (const ou var) + nome + tipo
 	const PI float64 = 3.1415
-	var raio = 3.2 //Inferência de tipo de uma variável
+	var raio = 3.2 //Inferência de tipo de uma variável (float64)
 
 	//Forma reduzida de criar um var (declarando e atribuindo a uma variável em uma única definição)
 	//OBS: Diferentemente das outras linguagens, o Go reconhece que para uma variável que foi declarada,
@@ -20,7 +20,7 @@ func main() {
 
 	//area := PI * math.Pow(raio, 2)
 
-	//Referenciando um pacote a partir de uma letra
+	//Referenciando um pacote a partir de uma letra, dentro do import
 	area := PI * m.Pow(raio, 2)
 	fmt.Println("A área da circunferência é", area)
 
@@ -38,10 +38,10 @@ func main() {
 	fmt.Println(a, b, c, d)
 
 	//Mais formas de declarar variáveis
-	var e, f bool = true, false
+	var e, f bool = true, false //O valor true será atribuído para e, e false para f
 	fmt.Println(e, f)
 
-	g, h, i := 2, false, "epa!"
+	g, h, i := 2, false, "epa!" //2 será atribuído para g, false para h, e "epa!" para i
 
 	fmt.Println(g, h, i)
 }
