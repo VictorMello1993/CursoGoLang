@@ -7,7 +7,7 @@ import (
 )
 
 func notaParaConceito(n float64) string {
-	switch {
+	switch { //Por default, é equivalente a definir switch true
 	case n == 10:
 		fallthrough
 	case n >= 9:
