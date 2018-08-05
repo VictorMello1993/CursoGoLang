@@ -13,7 +13,7 @@ func main() {
 
 	//Definindo um FOR de forma semelhante ao While
 	i := 1
-	for i <= 10 { //Não existe laço while em Go!
+	for i <= 10 { 
 		fmt.Println(i)
 		i++
 	}
@@ -36,7 +36,7 @@ func main() {
 	//Definindo laço infinito
 	for {
 		fmt.Println("Para sempre...")
-		time.Sleep(time.Second) //Usando Sleep() para evitar que o código rode freneticamente o laço infinito
+		time.Sleep(time.Second) //Usando Sleep() para evitar que o código rode freneticamente o laço infinito por 1 segundo
 	}
 
 }
