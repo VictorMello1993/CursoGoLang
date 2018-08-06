@@ -25,7 +25,7 @@ func main() {
 	s = append(s, 100, 200, 300, 400, 500, 600, 700, 800, 900)
 	fmt.Println(s, len(s), cap(s))
 
-	//Novo teste: inserindo um elemento para ultrapassar a capacidade máxima do array
+	//Novo teste: inserindo um novo elemento para ultrapassar a capacidade máxima do array
 	s = append(s, 5000)
 	fmt.Println(s, len(s), cap(s)) //Opa! o tamanho do array é dobrado! O erro não ocorre!
 }
