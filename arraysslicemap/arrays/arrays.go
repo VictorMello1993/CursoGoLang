@@ -17,7 +17,7 @@ func main() {
 	notas[0], notas[1], notas[2] = 7.5, 8.0, 6.0
 	fmt.Println(notas)
 
-	// notas[3] = 10 //Erro de compilação. Índice inválido, pois para um array de 3 elementos, os mesmo são acessados das posições 0 até 2
+	// notas[3] = 10 //Erro de compilação. Índice inválido, pois para um array de 3 elementos, os mesmos são acessados das posições 0 até 2
 
 	total := 0.0
 	for i := 0; i < len(notas); i++ {
