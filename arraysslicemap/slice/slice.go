@@ -35,4 +35,7 @@ func main() {
 	//Definindo slice de um slice
 	s4 := s3[:2] //[10 20]
 	fmt.Println(s3, s4)
+
+	//s5 := []a1 //Erro! a1 não é um struct
+	//fmt.Println("s5:", s5)
 }
