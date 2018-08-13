@@ -12,7 +12,7 @@ import (
 /*Uma função não pode ter o mesmo nome em mais um arquivo contido no mesmo pacote. O identificador
 deve ser único em cada módulo.*/
 
-//Ponto representa uma coordenada no plano cartesiano (é público)
+//Ponto representa uma coordenada no plano cartesiano
 type Ponto struct {
 	x float64
 	y float64
