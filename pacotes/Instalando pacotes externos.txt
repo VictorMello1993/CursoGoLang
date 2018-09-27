@@ -1,0 +1,5 @@
+Instalando uma dependência (pacote) do Go criada de um repositório qualquer (GitHub, GitLab, entre outros):
+
+go get -u <caminho_repositorio>
+
+Ex: go get -u github.com/nome_usuario/nome_pacote
