@@ -38,7 +38,7 @@ func main() {
 			if num <= 0 {
 				fmt.Println("Número inapropriado para tabuadas para fins educativos.")
 			} else {
-				testerepositoriogitlab.Tabuada(num) //Chamando a função implementada no pacote externo testerepositoriogitlab
+				testerepositoriogitlab.Tabuada(num) //Chamando a função implementada no pacote externo
 				break
 			}
 		} else {
