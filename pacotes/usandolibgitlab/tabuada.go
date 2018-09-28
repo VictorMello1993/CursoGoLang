@@ -34,16 +34,14 @@ func main() {
 		ehNumerico, _ := regexp.MatchString("^([0-9]+)$", valor)
 
 		if ehNumerico {
-			num, _ := strconv.Atoi(valor) //Convertendo uma string com todos os caracteres exclusivamente
-			//numéricos para int
-
+			num, _ := strconv.Atoi(valor) //Convertendo uma string com todos os caracteres exclusivamente numéricos para int
 			if num <= 0 {
 				fmt.Println("Número inapropriado para tabuadas para fins educativos.")
 			} else {
 				testerepositoriogitlab.Tabuada(num) //Chamando a função implementada no pacote externo testerepositoriogitlab
 				break
 			}
-		} else if !ehNumerico {
+		} else {
 			fmt.Println("Valor inválido")
 		}
 	}
