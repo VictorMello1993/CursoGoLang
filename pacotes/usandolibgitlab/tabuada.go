@@ -1,11 +1,10 @@
 package main
 
 import (
+	"gitlab.com/VictorMello1993/testegitlab"
 	"fmt"
 	"regexp"
 	"strconv"
-
-	"gitlab.com/VictorMello1993/testerepositoriogitlab"
 )
 
 func main() {
@@ -38,7 +37,7 @@ func main() {
 			if num <= 0 {
 				fmt.Println("Números negativos são inapropriados para a tabuada")
 			} else {
-				testerepositoriogitlab.Tabuada(num) //Chamando a função implementada no pacote externo
+				testegitlab.Tabuada(num) //Chamando a função implementada no pacote externo
 				break
 			}
 		} else {
