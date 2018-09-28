@@ -36,7 +36,7 @@ func main() {
 		if ehNumerico {
 			num, _ := strconv.Atoi(valor) //Convertendo uma string com todos os caracteres exclusivamente numéricos para int
 			if num <= 0 {
-				fmt.Println("Número inapropriado para tabuadas para fins educativos.")
+				fmt.Println("Números negativos são inapropriados para a tabuada")
 			} else {
 				testerepositoriogitlab.Tabuada(num) //Chamando a função implementada no pacote externo
 				break
