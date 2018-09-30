@@ -19,12 +19,12 @@ func main() {
 	// falar("Pedro", "Eae, qual é a boa de hoje?", 1)
 
 	//Criando uma goroutine (função que executa de maneira independente de outras funções)
-	go falar("Victor", "Ei...", 500)
-	go falar("Vanderson", "Entendi, parça!", 500)
+	// go falar("Victor", "Ei...", 500)
+	// go falar("Vanderson", "Entendi, parça!", 500)
 
 	//É importante levar em consideração que uma goroutine só será executada quando a função main() terminar
 	//a execução.
-
-	time.Sleep(time.Second * 5)
+	go falar("Victor", "Entendi!!!!", 10)
+	falar("João", "Parabéns!", 5)
 
 }
