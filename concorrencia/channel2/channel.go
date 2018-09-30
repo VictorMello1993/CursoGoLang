@@ -29,15 +29,17 @@ func main() {
 	terminar a sua*/
 
 	fmt.Println("A")
-	a, b := <-c, <-c /*Recebendo dados do canal proveniente da goutine (aqui é o ponto de sincronismo, a função main
-	aguarda a passagem de valores para um canal
-	da goroutine para depois continuar com a sua
-	execução)*/
+	time.Sleep(5 * time.Second)
+	//a, b := <-c, <-c /*Recebendo dados do canal proveniente da goutine (aqui é o ponto de sincronismo, a função main
+	// aguarda a passagem de valores para um canal
+	// da goroutine para depois continuar com a sua
+	// execução)*/
 
 	fmt.Println("B")
 
-	fmt.Println(a, b)
+	// fmt.Println(a, b)
+	fmt.Println(<-c, <-c)
 	fmt.Println(<-c) //Lendo o 3º valor recebido do canal
-	fmt.Println(<-c) /*ERRO! Deadlock! Todas as goroutines já executaram, e estão paradas. Não existe uma outra
-	goroutine que envie um dado para o canal*/
+	// fmt.Println(<-c) /*ERRO! Deadlock! Todas as goroutines já executaram, e estão paradas. Não existe uma outra
+	// goroutine que envie um dado para o canal*/
 }
