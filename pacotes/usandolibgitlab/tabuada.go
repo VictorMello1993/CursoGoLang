@@ -1,10 +1,11 @@
 package main
 
 import (
-	"gitlab.com/VictorMello1993/testegitlab"
 	"fmt"
 	"regexp"
 	"strconv"
+
+	"gitlab.com/VictorMello1993/testegitlab"
 )
 
 func main() {
@@ -30,7 +31,7 @@ func main() {
 		fmt.Scanln(&valor)
 		// ehNumerico, _ := regexp.Compile("^([0-9]+)$")
 		// match := ehNumerico.MatchString(valor)
-		ehNumerico, _ := regexp.MatchString("^([0-9]+)$", valor)
+		ehNumerico, _ := regexp.MatchString("^(([0-9]+)|(\\-[0-9]+))$", valor)
 
 		if ehNumerico {
 			num, _ := strconv.Atoi(valor) //Convertendo uma string com todos os caracteres exclusivamente numéricos para int
