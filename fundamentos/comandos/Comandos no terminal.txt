@@ -1,0 +1,27 @@
+						Comandos da Linguagem Go no terminal
+
+go env - mostra as variáveis de ambiente relacionadas à instalação da própria linguagem no computador.
+
+as mais importantes variáveis de ambiente são:
+GOROOT - Variável de ambiente que determina o local (diretório) em que o compilador da Linguagem Go foi instalado
+         no computador
+
+GOPATH - Indica o local onde ficam os projetos (workspace)
+
+go help outro_comando: mostra as dicas de cada comando mostrado no terminal
+
+go version: mostra a última versão do Go instalada no sistema
+
+godoc -http=:6060: habilitar a documentação da Linguagem go offline
+
+go doc  cmd/vet - mostra uma maneira de detectar um "código morto", além de escanear seu código verificando
+		 se alguma coisa suspeita foi instalada no seu projeto, entre outras coisas do mesmo ponto
+		 de vista
+
+go vet nome_arquivo.go - mostra o que está faltando no código-fonte para funcionar corretamente.
+
+go build nome_arquivo.go - realiza a compilação do código-fonte. No final, será gerado um executável do mesmo.
+
+./nome_programa.go - realiza a execução do código
+
+go run nome_arquivo.go - compila e executa o código simultaneamente

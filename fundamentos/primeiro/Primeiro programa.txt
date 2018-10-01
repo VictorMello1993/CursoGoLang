@@ -1,0 +1,11 @@
+						GERANDO EXECUTÁVEL EM GO
+
+
+Para gerar executável em GO, deve-se seguir 2 convenções:
+
+1- Todo programa em go é executado dentro de um pacote main. Ao importar o pacote fmt, já vem incluídos os I/Os
+formatados
+
+2- A função que inicializa o programa em GO é a func main()
+
+

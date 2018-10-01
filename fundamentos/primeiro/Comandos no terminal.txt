@@ -1,0 +1,9 @@
+						Comandos da Linguagem Go no terminal
+
+go env - mostra as variáveis de ambiente relacionadas à instalação da própria linguagem no computador.
+
+as mais importantes variáveis de ambiente são:
+GOROOT - Variável de ambiente que determina o local (diretório) em que o compilador da Linguagem Go foi instalado
+         no computador
+
+GOPATH - Indica o local onde ficam os projetos (workspace)
