@@ -21,7 +21,9 @@ func tituloURL(urls ...string) <-chan string {
 			html, _ := ioutil.ReadAll(resp.Body)
 
 			//r, _ := regexp.Compile("<title>(.*?)<\\/title>")
-			r, _ := regexp.Compile("<title>(.|\n)*?<\\/title>")
+
+			// r, _ := regexp.Compile("<title>(.|\n)*?<\\/title>")
+			r, _ := regexp.Compile("<title>(.*?)|([^\\d])*?<\\/title>")
 			//r, _ := regexp.Compile("<title>([\\s\\S]*?)<\\/title>")
 			// r, _ := regexp.Compile("<title>(.|[\\s\\S])*?<\\/title>")
 
